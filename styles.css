@@ -48,3 +48,10 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px; /* Espacio alrededor del texto */
     border-radius: 5px; /* Bordes redondeados */
 }
+
+
+/* Centrar el reproductor de audio */
+.audio-container {
+    justify-content: center;    /* Centra horizontalmente */
+}
+
