@@ -6,8 +6,41 @@
     <title>Mi Collage para Luz</title>
     <!-- Vinculamos Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css"> <!-- Nuestro archivo de estilos -->
+
+    <style>
+
+            /* Estilo para el botón */
+        .btn-popup {
+            position: fixed; /* Fija el botón en la pantalla */
+            bottom: 30px; /* A 30px de la parte inferior de la página */
+            left: 50%; /* Centra el botón horizontalmente */
+            transform: translateX(-50%); /* Ajusta el centrado */
+            z-index: 9999; /* Asegura que el botón esté por encima de otros elementos */
+        }
+
+        /* Estilo para el botón y el texto */
+        #hiddenText {
+            display: none; /* El texto está oculto al principio */
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+            color: white; /* Texto blanco */
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            position: fixed; /* Fijar el popup en la pantalla */
+            bottom: 30px; /* A 30px del fondo */
+            left: 50%; /* Centrar horizontalmente */
+            transform: translateX(-50%); /* Ajusta el centrado */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+    </style>
+
+
 </head>
 <body>
 
@@ -21,27 +54,27 @@
                     <img src="images/first.jpg" class="card-img-top" alt="Fecha Especial 1">
                     <div class="card-body">
                         <h5 class="card-title">25 de Diciembre, 2023</h5>
-                        <p class="card-text">Nuestro primer aniversario, el día que todo comenzó.</p>
+                        <p class="card-text">El día que todo comenzó <i class="fas fa-heart"></i></p>
                     </div>
                 </div>
             </div>
             <!-- Fecha 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/recuerdo2.jpg" class="card-img-top" alt="Fecha Especial 2">
+                    <img src="images/firstfoto.jpeg" class="card-img-top" alt="Fecha Especial 2">
                     <div class="card-body">
-                        <h5 class="card-title">14 de Febrero, 2024</h5>
-                        <p class="card-text">Nuestro primer San Valentín juntos.</p>
+                        <h5 class="card-title">11 de Noviembre, 2023</h5>
+                        <p class="card-text">Primera foto juntos C: </p>
                     </div>
                 </div>
             </div>
             <!-- Fecha 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/recuerdo3.jpg" class="card-img-top" alt="Fecha Especial 3">
+                    <img src="images/arlechino.jpeg" class="card-img-top" alt="Fecha Especial 3">
                     <div class="card-body">
-                        <h5 class="card-title">Primer Encuentro</h5>
-                        <p class="card-text">El primer día que nos conocimos, el comienzo de todo.</p>
+                        <h5 class="card-title">26 de enero, arlechino y graduación</h5>
+                        <p class="card-text">(No fui invitado a la graduación) =C</p>
                     </div>
                 </div>
             </div>
@@ -55,30 +88,30 @@
             <!-- Viaje 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/viaje1.jpg" class="card-img-top" alt="Viaje 1">
+                    <img src="images/gdl.jpeg" class="card-img-top" alt="Viaje 1">
                     <div class="card-body">
-                        <h5 class="card-title">Viaje a la Playa</h5>
-                        <p class="card-text">Nuestra escapada a la playa, recuerdos inolvidables bajo el sol.</p>
+                        <h5 class="card-title">Guadalajara</h5>
+                        <p class="card-text">Primer viaje juntos, todo bien solo mucha calor</p>
                     </div>
                 </div>
             </div>
             <!-- Viaje 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/viaje2.jpg" class="card-img-top" alt="Viaje 2">
+                    <img src="images/cdmx.jpeg" class="card-img-top" alt="Viaje 2">
                     <div class="card-body">
-                        <h5 class="card-title">Aventura en la Montaña</h5>
-                        <p class="card-text">Un fin de semana explorando la naturaleza en las montañas.</p>
+                        <h5 class="card-title">CDMX</h5>
+                        <p class="card-text">En casa toño :v</p>
                     </div>
                 </div>
             </div>
             <!-- Viaje 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/viaje3.jpg" class="card-img-top" alt="Viaje 3">
+                    <img src="images/osaka.jpeg" class="card-img-top" alt="Viaje 3">
                     <div class="card-body">
-                        <h5 class="card-title">Viaje a la Ciudad</h5>
-                        <p class="card-text">Un día increíble descubriendo la ciudad juntos.</p>
+                        <h5 class="card-title">Japón</h5>
+                        <p class="card-text">Chill en universal, OSAKA</p>
                     </div>
                 </div>
             </div>
@@ -87,40 +120,62 @@
 
     <!-- Sección "Special Stuff" -->
     <section class="container my-5">
-        <h2 class="text-center mb-4">Special Stuff</h2>
+        <h2 class="text-center mb-4">MI TODO</h2>
         <div class="row">
             <!-- Objeto 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/objeto1.jpg" class="card-img-top" alt="Objeto Especial 1">
+                    <img src="images/belleza1.jpeg" class="card-img-top" alt="Objeto Especial 1">
                     <div class="card-body">
-                        <h5 class="card-title">Nuestro Primer Regalo</h5>
-                        <p class="card-text">Recuerdo de nuestro primer regalo de aniversario.</p>
+                        <h5 class="card-title">Un bombón en osaka</h5>
+                        <p class="card-text">Una belleza y al lado el casillo de osaka</p>
                     </div>
                 </div>
             </div>
             <!-- Objeto 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/objeto2.jpg" class="card-img-top" alt="Objeto Especial 2">
+                    <img src="images/belleza.jpeg" class="card-img-top" alt="Objeto Especial 2">
                     <div class="card-body">
-                        <h5 class="card-title">Carta de Amor</h5>
-                        <p class="card-text">La primera carta que me escribiste, llena de cariño.</p>
+                        <h5 class="card-title">Mi novia</h5>
+                        <p class="card-text">Tengo la novia más bonita del mundo</p>
                     </div>
                 </div>
             </div>
             <!-- Objeto 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="images/objeto3.jpg" class="card-img-top" alt="Objeto Especial 3">
+                    <img src="images/cumple.jpeg" class="card-img-top" alt="Objeto Especial 3">
                     <div class="card-body">
-                        <h5 class="card-title">Nuestra Foto Favorita</h5>
-                        <p class="card-text">Una de las fotos más especiales que tenemos juntos.</p>
+                        <h5 class="card-title">Cumpleaños</h5>
+                        <p class="card-text">Primer cumpleaños ya como novios jej</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <button class="btn btn-primary btn-popup" onclick="toggleText()">💖</button>
+
+    <!-- Texto oculto que se muestra al hacer clic en el botón (popup) -->
+    <div id="hiddenText">
+        <p>Hola pequeñita, esto es una "carta" a mi manera, 
+           puse solo poco de nuestros bellos momentos que hemos vivido juntos.
+           No quiero que esta historia se termine, quiero seguir creando momentos a tu lado.
+           Se que no ha sido un buen año, demasiados altibajos, malos momentos, etc.
+           He hecho cosas de las cuales se que he traicionado tu confianza, te llego a estresar con mis 
+           sobrepensar y crearme historias que realemente no han pasado y solo es producto de mi cabeza.
+           Te pido perdón por todos esos malos momentos, decidi que no vale la pena crearme eso en la cabeza,
+           estoy con la persona que amo y espero así sea el resto de mi vida. No se que nos espera en el futuro,
+           si cosas buenas o malas, solo se que quiero estar contigo, y vivir el día a día.
+
+           Espero te guste esto, lo hice de corazón, es algo en lo que podamos ir poniendo y agregando mas momentos especiales,
+           Te amo mucho. 
+           C=.
+         </p>
+    </div>
+
+    <script src="script.js"></script> <!-- Enlazar el archivo JavaScript -->
 
     <!-- Scripts de Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
